@@ -19,8 +19,8 @@ To ensure the theme functions correctly, you need to install the following depen
   sudo pacman -S gst-libav phonon-qt5-gstreamer gst-plugins-good qt5-quickcontrols qt5-graphicaleffects qt5-multimedia
 - **Gentoo**: 
   Add the following USE flags to your configuration:
-
-  media-libs/gst-plugins-good
+```bash
+media-libs/gst-plugins-good
 USE="alsa gstreamer qml widgets"
 dev-qt/qtmultimedia
 USE="widgets"
@@ -28,7 +28,7 @@ dev-qt/qtquickcontrols
 dev-qt/qtgraphicaleffects
 USE="gstreamer"
 media-libs/phonon
-
+```
 Optionally, you can install:
 
 media-plugins/gst-plugins-openh264
