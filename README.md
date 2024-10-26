@@ -81,20 +81,28 @@ sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
 *Note: Super user privileges are required to move files into this directory.*
 
 
+
+
+
+
+
+
 ### 🎥 Installing Background Videos
 
 
 
-1. Use high-quality sources like pexels.com or download videos using yt-dlp.
+1. Use high-quality sources like [pexels.com](https://www.pexels.com) or download videos using [yt-dlp](https://github.com/yt-dlp/yt-dlp))
 
 2. Move the downloaded videos to:
+```bash
    /home/YOUR_USER/Videos/
-3. Install the Provided Apple Fonts from within the Folder or provide your own Font Family in theme.conf.user
+```
+3. Install the Provided Apple Fonts from within the Folder or provide your own Font Family in **theme.conf.user**
 
-4. Modify playlistcreator.sh:
+4. Modify **playlistcreator.sh**:
 
-   4.1 Open playlistcreator.sh with a text editor and edit YOUR-USER.
-   4.2 Run playlistcreator.sh (ensure you don’t have any unwanted videos in the Video Folder beforehand).
+   4.1 Open playlistcreator.sh with a text editor and edit **YOUR-USER**.
+   4.2 Run playlistcreator.sh *(ensure you don’t have any unwanted videos in the Video Folder beforehand)*
    4.3 Name the playlist files according to the naming convention:
        **day** | **Night** | **daynsfw** | **nightnsfw**
        
