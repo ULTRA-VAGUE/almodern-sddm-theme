@@ -4,18 +4,18 @@ The **ALmodern SDDM Theme**  allows you to play your chosen videos randomly, uti
 The theme differentiates between day and night, where night is defined as the period between **7 PM and 7 AM** (configured in 24-hour format).
 It is possible to tweak the settings for more time differentiation.
 
-# Inhaltsverzeichnis
+# INDEX
 
-- [Dependencies](#-dependencies)
+- [Dependencies](dependencies)
 - [Installing on Different Distros](#how-to-install-on-various-distros)
-- [Configuration Steps](#Configuration-Steps)
-- [Installing Background Videos](#installing-background-videos)
-- [Completion](#completion)
-- [Testing the Theme](#testing-the-theme)
-- [Not So Secret Secret Button](#not-so-secret-secret-button)
-- [Customization](#customization)
+- [Configuration Steps](configuration-steps)
+- [Installing Background Videos](installing-background-videos)
+- [Completion](completion)
+- [Testing the Theme](Testing-The-Theme)
+- [Not So Secret Secret Button](not-so-secret-secret-button)
+- [Customization](customization)
 
-## 📦 Dependencies
+## :old_key: Dependencies
 
 To ensure the theme functions correctly, you need to install the following dependencies:
 
@@ -75,7 +75,7 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 
 
-## 🛠️ Configuration Steps
+## :hammer_and_wrench: Configuration Steps
 
 **Clone the Repo**
 ```bash
@@ -95,7 +95,7 @@ sudo mv ALmodern /usr/share/sddm/themes
 
 
 
-### 🎥 Installing Background Videos
+### :movie_camera: Installing Background Videos
 
 
 
@@ -117,18 +117,18 @@ sudo mv ALmodern /usr/share/sddm/themes
        **day** | **Night** | **daynsfw** | **nightnsfw**
        
 
-## ✅ Completion
+## :white_check_mark: Completion
 
 Once completed, the playlistcreator should move your downloaded videos into the theme folder, create playlists based on the number of videos in the Video folder, and leave you satisfied! 😊
 
-## 🖥️ Testing the Theme
+## :desktop_computer: Testing the Theme
 
 You can test the theme by running:
 ```bash
 sddm-greeter --test-mode --theme <path-to-theme-folder>
 ```
 
-## Not so secret secret Button 🔥
+## Not so secret secret Button :fire:
 
 ## Customization |
 
