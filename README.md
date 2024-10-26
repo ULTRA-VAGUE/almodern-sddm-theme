@@ -70,8 +70,7 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 **Clone the Repo**
 ```bash
-git clone https://github.com/3ximus/aerial-sddm-theme
-sudo mv aerial-sddm-theme /usr/share/sddm/themes
+git clone https://github.com/ULTRA-VAGUE/almodern-sddm-theme
 ```
 
 **Move the Theme to the correct Directory**
@@ -103,6 +102,7 @@ sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
 
    4.1 Open playlistcreator.sh with a text editor and edit **YOUR-USER**.
    4.2 Run playlistcreator.sh *(ensure you don’t have any unwanted videos in the Video Folder beforehand)*
+
    4.3 Name the playlist files according to the naming convention:
        **day** | **Night** | **daynsfw** | **nightnsfw**
        
