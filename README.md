@@ -112,5 +112,11 @@ sudo mv ALmodern /usr/share/sddm/themes
 
 Once completed, the playlistcreator should move your downloaded videos into the theme folder, create playlists based on the number of videos in the Video folder, and leave you satisfied! 😊
 
+## 🖥️ Testing the Theme
+
+You can test the theme by running:
+```bash
+sddm-greeter --test-mode --theme <path-to-this-repository>
+```
 ### UI Elements
 
