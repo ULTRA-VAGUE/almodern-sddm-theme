@@ -116,7 +116,12 @@ Once completed, the playlistcreator should move your downloaded videos into the 
 
 You can test the theme by running:
 ```bash
-sddm-greeter --test-mode --theme <path-to-this-repository>
+sddm-greeter --test-mode --theme <path-to-theme-folder>
 ```
-### UI Elements
+
+## Not so secret secret Button 🔥
+
+## Customization |
+
+
 
