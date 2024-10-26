@@ -60,10 +60,15 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 ## 🛠️ Configuration Steps
 
 **Clone the Repo**
-git clone git@github.com:3ximus/aerial-sddm-theme.git
+```bash
+git clone https://github.com/3ximus/aerial-sddm-theme
+sudo mv aerial-sddm-theme /usr/share/sddm/themes
+```
 
 **Move the Theme to the correct Directory**
+```bash
 sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
+```
 *Note: Super user privileges are required to move files into this directory.*
 
 
