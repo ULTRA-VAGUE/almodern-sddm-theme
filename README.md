@@ -12,6 +12,11 @@ To ensure the theme functions correctly, you need to install the following depen
 - **GStreamer FFmpeg Plugin**
 - **GStreamer Plugins Good**
 
+
+
+
+
+
 ### How to install them | Various Distros
 
 - **Arch Linux**:
