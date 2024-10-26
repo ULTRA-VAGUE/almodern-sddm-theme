@@ -75,7 +75,7 @@ git clone https://github.com/ULTRA-VAGUE/almodern-sddm-theme
 
 **Move the Theme to the correct Directory**
 ```bash
-sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
+sudo mv ALmodern /usr/share/sddm/themes
 ```
 *Note: Super user privileges are required to move files into this directory.*
 
@@ -90,7 +90,7 @@ sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
 
 
 
-1. Use high-quality sources like [pexels.com](https://www.pexels.com) or download videos using [yt-dlp](https://github.com/yt-dlp/yt-dlp))
+1. Use high-quality sources like [pexels.com](https://www.pexels.com) or download videos using [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 2. Move the downloaded videos to:
 ```bash
