@@ -57,7 +57,7 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 
 
-##### 🛠️ Configuration Steps
+## 🛠️ Configuration Steps
 
 **Clone the Repo**
 git clone git@github.com:3ximus/aerial-sddm-theme.git
@@ -67,7 +67,7 @@ sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
 *Note: Super user privileges are required to move files into this directory.*
 
 
-##### 🎥 Installing Background Videos
+### 🎥 Installing Background Videos
 
 
 
@@ -85,9 +85,9 @@ sudo mv ALmodern-sddm-theme /usr/share/sddm/themes
        **day** | **Night** | **daynsfw** | **nightnsfw**
        
 
-###### ✅ Completion
+## ✅ Completion
 
 Once completed, the playlistcreator should move your downloaded videos into the theme folder, create playlists based on the number of videos in the Video folder, and leave you satisfied! 😊
 
-###### UI Elements
+### UI Elements
 
