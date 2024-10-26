@@ -52,6 +52,7 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 ```
 *Ensure you set up the RPM Fusion Repo first to get the gstreamer1-libav package.*
 
+
 **OTHER DISTROS HAVE NOT BEEN TESTED**
 
 ##### 🛠️ Configuration Steps
