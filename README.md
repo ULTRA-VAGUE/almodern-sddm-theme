@@ -6,14 +6,14 @@ It is possible to tweak the settings for more time differentiation.
 
 # Inhaltsverzeichnis
 
-- [Dependencies](##-dependencies)
-- [Installing on different Distros](###-how-to-install-them--various-distros)
-- [Configuration steps](##-configuration-steps)
-- [Installing background videos](###-installing-background-videos)
-- [Completion](##-completion)
-- [Testing the Theme](##-testing-the-theme)
-- [The Secret Button](##-not-so-secret-secret-button)
-- [Customization](##-customization)
+- [Dependencies](#-dependencies)
+- [Installing on Different Distros](#how-to-install-on-various-distros)
+- [Configuration Steps](#Configuration-Steps)
+- [Installing Background Videos](#installing-background-videos)
+- [Completion](#completion)
+- [Testing the Theme](#testing-the-theme)
+- [Not So Secret Secret Button](#not-so-secret-secret-button)
+- [Customization](#customization)
 
 ## 📦 Dependencies
 
@@ -28,7 +28,7 @@ To ensure the theme functions correctly, you need to install the following depen
 
 
 
-### How to install them | Various Distros
+### How to install on Various Distros
 
 - **Arch Linux**:
   ```bash
