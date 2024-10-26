@@ -4,7 +4,16 @@ The **ALmodern SDDM Theme**  allows you to play your chosen videos randomly, uti
 The theme differentiates between day and night, where night is defined as the period between **7 PM and 7 AM** (configured in 24-hour format).
 It is possible to tweak the settings for more time differentiation.
 
+# Inhaltsverzeichnis
 
+- [Dependencies](##-dependencies)
+- [Installing on different Distros](###-how-to-install-them--various-distros)
+- [Configuration steps](##-configuration-steps)
+- [Installing background videos](###-installing-background-videos)
+- [Completion](##-completion)
+- [Testing the Theme](##-testing-the-theme)
+- [The Secret Button](##-not-so-secret-secret-button)
+- [Customization](##-customization)
 
 ## 📦 Dependencies
 
