@@ -55,6 +55,8 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 ### OTHER DISTROS HAVE NOT BEEN TESTED
 
+
+
 ##### 🛠️ Configuration Steps
 
 **Clone the Repo**
