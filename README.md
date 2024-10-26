@@ -50,7 +50,7 @@ sudo apt-get install gstreamer1.0-libav qml-module-qtmultimedia libqt5multimedia
 ```bash 
 sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 ```
-Ensure you set up the RPM Fusion Repo first to get the gstreamer1-libav package.
+*Ensure you set up the RPM Fusion Repo first to get the gstreamer1-libav package.*
 
 **OTHER DISTROS HAVE NOT BEEN TESTED**
 
