@@ -4,6 +4,8 @@ The **ALmodern SDDM Theme**  allows you to play your chosen videos randomly, uti
 The theme differentiates between day and night, where night is defined as the period between **7 PM and 7 AM** (configured in 24-hour format).
 It is possible to tweak the settings for more time differentiation.
 
+
+
 ## 📦 Dependencies
 
 To ensure the theme functions correctly, you need to install the following dependencies:
@@ -59,6 +61,8 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 
 ### OTHER DISTROS HAVE NOT BEEN TESTED
+
+
 
 
 
