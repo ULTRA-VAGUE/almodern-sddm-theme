@@ -12,7 +12,7 @@ It is possible to tweak the settings for more time differentiation.
 - [Configuration](configuration-steps.md)
 - [Installing your own Videos](installing-background-videos.md)
 - [Testing the Theme](testing-the-theme.md)
-- [Top Bar | SFW/NSFW Switch](#-top-bar--sfw-nsfw-switch)
+- [Top Bar | SFW/NSFW Switch](#-top-bar)
 - [Customization](customization)
 
 ## Dependencies
@@ -133,7 +133,7 @@ You can test the theme by running:
 sddm-greeter --test-mode --theme <path-to-theme-folder>
 ```
 
-## Top Bar | SFW/NSFW Swtich
+## Top-Bar
 
 ## Customization
 
