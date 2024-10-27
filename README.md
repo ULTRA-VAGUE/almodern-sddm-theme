@@ -13,6 +13,7 @@ It is possible to tweak the settings for more time differentiation.
 - [Installing your own Videos](wiki/installing-background-videos.md)
 - [Testing the Theme](wiki/testing-the-theme.md)
 - [Customization](wiki/customization.md)
+- [Troubleshooting](wiki/troubleshooting.md)
 
 
 ## Top-Bar
