@@ -1,12 +1,22 @@
 # 🎨 ALmodern SDDM | Dynamic Video Backgrounds and Built in Video Swicher! 
-A Modern Theme following apple's design philosophy with a 🔥 twist.
+A Modern Theme following apple's design philosophy with a 🔥 twist. (sfw/nsfw switch)
 The **ALmodern SDDM Theme**  allows you to play your chosen videos randomly, utilizing different playlists based on the time of day.
 The theme differentiates between day and night, where night is defined as the period between **7 PM and 7 AM** (configured in 24-hour format).
 It is possible to tweak the settings for more time differentiation.
+## Preview
 
+## Index
+- [Einführung](#-Preview)
+- [Abhängigkeiten](dependencies)
+- [Installation auf verschiedenen Distros](installation-on-various-distros)
+- [Konfiguration](configuration-steps)
+- [Hintergrundvideos installieren](installing-background-videos)
+- [Fertigstellung](completion)
+- [Das Thema testen](testing-the-theme)
+- [Top Bar | SFW/NSFW Switch](top-bar-sfw-nsfw-switch)
+- [Anpassung](customization)
 
-
-## :old_key: Dependencies
+## Dependencies
 
 To ensure the theme functions correctly, you need to install the following dependencies:
 
@@ -66,7 +76,7 @@ sudo dnf install git qt5-qtgraphicaleffects qt5-qtquickcontrols gstreamer1-libav
 
 
 
-## :hammer_and_wrench: Configuration Steps
+## Configuration Steps
 
 **Clone the Repo**
 ```bash
@@ -86,7 +96,7 @@ sudo mv ALmodern /usr/share/sddm/themes
 
 
 
-### :movie_camera: Installing Background Videos
+### Installing Background Videos
 
 
 
@@ -124,9 +134,9 @@ You can test the theme by running:
 sddm-greeter --test-mode --theme <path-to-theme-folder>
 ```
 
-## Not so secret secret Button :fire:
+## Top Bar | SFW/NSFW Swtich
 
-## Customization |
+## Customization
 
 
 
