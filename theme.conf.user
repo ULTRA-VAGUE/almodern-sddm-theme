@@ -1,0 +1,24 @@
+[General]
+TimeFormat=H mm
+actionBarFontColor="white"
+actionBarFontSize=10
+autofocusInput=true
+background=loading.gif
+bgVidDay=playlists/day.m3u
+bgVidDayNSFW=playlists/daynsfw.m3u
+bgVidNight=playlists/night.m3u
+bgVidNightNSFW=playlists/nightnsfw.m3u
+dateFontSize=15
+dateFormat=dddd MMMM yyyy
+dayTimeEnd=19
+dayTimeStart=4
+displayFont="SF Pro"
+labelFontSize=18
+passwordLeftMargin=1
+relativePositionX=0.15
+relativePositionY=0.75
+showClearPasswordButton=true
+showLoginButton=false
+showTopBar=true
+type=color
+usernameLeftMargin=1

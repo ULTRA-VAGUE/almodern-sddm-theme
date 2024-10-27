@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=ALmodern
+Description=A Modern Theme following apple's design philosophy. playing your favourite videos, with a litte secret. click the fire button.
+Author=Fabio Almeida, ULTRAVAGUE
+Copyright=(c) 2016, Fabio Almeida, 2024 Lucas Born
+License=CC-BY-SA
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/ULTRA-VAGUE/almodern-sddm-theme
+Screenshot=screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Email=spam-born@inbox.lv
+Theme-Id=ALmodern
+Theme-API=2.0
+
