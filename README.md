@@ -106,7 +106,12 @@ sudo mv ALmodern /usr/share/sddm/themes
 
    4.3 Name the playlist files according to the naming convention:
        **day** | **Night** | **daynsfw** | **nightnsfw**
-       
+
+#### you can edit the playlist.m3u files with any text editor you like, and add videos by pasting their path on a new line. e.g
+```bash
+file:///usr/share/sddm/themes/ALmodern/example_daytime.webm
+file:///usr/share/sddm/themes/ALmodern/another_example_4_daytime.webm
+```       
 
 ## :white_check_mark: Completion
 
