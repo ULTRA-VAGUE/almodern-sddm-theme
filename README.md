@@ -6,15 +6,14 @@ It is possible to tweak the settings for more time differentiation.
 ## Preview
 
 ## Index
-- [Einführung](#-Preview)
-- [Abhängigkeiten](dependencies)
-- [Installation auf verschiedenen Distros](installation-on-various-distros)
-- [Konfiguration](configuration-steps)
-- [Hintergrundvideos installieren](installing-background-videos)
-- [Fertigstellung](completion)
-- [Das Thema testen](testing-the-theme)
-- [Top Bar | SFW/NSFW Switch](top-bar-sfw-nsfw-switch)
-- [Anpassung](customization)
+- [Preview](#-Preview)
+- [Dependencies](dependencies.md)
+- [Installation on various Distros](installation-on-various-distros.md)
+- [Configuration](configuration-steps.md)
+- [Installing your own Videos](installing-background-videos.md)
+- [Testing the Theme](testing-the-theme.md)
+- [Top Bar | SFW/NSFW Switch](#-top-bar-sfw-nsfw-switch)
+- [Customization](customization)
 
 ## Dependencies
 
