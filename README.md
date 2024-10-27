@@ -5,6 +5,9 @@ The theme differentiates between day and night, where night is defined as the pe
 It is possible to tweak the settings for more time differentiation.
 ## Preview
 
+## Top-Bar
+
+
 ## Index
 - [Preview](#-Preview)
 - [Dependencies](wiki/dependencies.md)
@@ -14,11 +17,4 @@ It is possible to tweak the settings for more time differentiation.
 - [Testing the Theme](wiki/testing-the-theme.md)
 - [Customization](wiki/customization.md)
 - [Troubleshooting](wiki/troubleshooting.md)
-
-
-## Top-Bar
-
-## Customization
-
-
 
