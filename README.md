@@ -12,7 +12,6 @@ It is possible to tweak the settings for more time differentiation.
 - [Configuration](configuration-steps.md)
 - [Installing your own Videos](installing-background-videos.md)
 - [Testing the Theme](testing-the-theme.md)
-- [Top Bar | SFW/NSFW Switch](#-top-bar)
 - [Customization](customization)
 
 ## Dependencies
