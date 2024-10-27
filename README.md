@@ -4,6 +4,7 @@ The **ALmodern SDDM Theme**  allows you to play your chosen videos randomly, uti
 The theme differentiates between day and night, where night is defined as the period between **7 PM and 7 AM** (configured in 24-hour format).
 It is possible to tweak the settings for more time differentiation.
 
+
 ## Index
 - [Dependencies](wiki/dependencies.md)
 - [Installation on various Distros](wiki/installation-on-various-distros.md)
@@ -16,7 +17,7 @@ It is possible to tweak the settings for more time differentiation.
 
 ## Preview
 
-![Screenshot_20241027_060506](https://github.com/user-attachments/assets/a1a6c7b2-dece-4754-82fc-e003badfd733)
+![Screenshot_20241027_060506](https://github.com/user-attachments/assets/a1a6c7b2-dece-4754-82fc-e003badfd733) ![Screenshot_20241028_004845](https://github.com/user-attachments/assets/2d17547f-e8bb-42e5-9e14-95ee22185f86)
 ### Swich your Window Manager | Restart | Shut-Down | Toggle SFW and NSFW Playlist
 ![buttonpanel](https://github.com/user-attachments/assets/b963c58e-d265-47f1-91ab-47ee6e66a712)
 
