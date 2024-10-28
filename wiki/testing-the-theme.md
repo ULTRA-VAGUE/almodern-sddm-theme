@@ -2,5 +2,5 @@
 
 You can test the theme by running:
 ```bash
-sddm-greeter --test-mode --theme <path-to-theme-folder>
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/ALmodern
 ```
