@@ -22,8 +22,7 @@ https://github.com/user-attachments/assets/723c36cb-b2e6-44bf-aeb0-56724c166f05
 ## Installation & Configuration
 
 - **[Dependencies](wiki/dependencies.md)**
-- **[Installation on Various Distros](wiki/installation-on-various-distros.md)**
-- **[Configuration Steps](wiki/configuration-steps.md)**
+- **[Installing the Theme](wiki/installing-theme.md)**
 - **[Installing Your Own Videos](wiki/installing-background-videos.md)**
 - **[Testing the Theme](wiki/testing-the-theme.md)**
 - **[Customization Options](wiki/customization.md)**
