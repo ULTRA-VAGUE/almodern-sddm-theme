@@ -8,10 +8,25 @@ Rectangle {
 
     signal syncPlaylists(string action)
 
+    property bool muteVideos: config.muteVideos === "true"  // Read mute state from config
 
     function syncPlayers(action) {
 
         if (action === "play") {
+
+            // Mute the other player when one is played
+
+            if (currentPlayer === mediaplayer1) {
+
+                mediaplayer2.muted = true; // Mute player 2
+
+            } else {
+
+                mediaplayer1.muted = true; // Mute player 1
+
+            }
+
+
 
             mediaplayer1.play();
 
@@ -46,17 +61,17 @@ Rectangle {
 
     }
 
-    // Timer für die Synchronisation der Position
+    // Timer for syncing the Position of 2 or more players
 
     Timer {
 
-        interval: 1000; // Erhöhte Intervalldauer zur Reduzierung des "Hackens"
+        interval: 1000; // Increased Interval to reduce possible stutter
 
         running: true; repeat: true
 
         onTriggered: {
 
-            // Synchronisiere die Positionen der Player
+            // Syncing Player Position
 
             if (Math.abs(mediaplayer1.position - mediaplayer2.position) > 1000) { // 1 Sekunde Toleranz
 
@@ -68,35 +83,35 @@ Rectangle {
 
     }
 
-    // Funktion, um die Playlists zu laden
+    // Function for Loading the Playlists
     function loadPlaylists() {
         var time = parseInt(new Date().toLocaleTimeString(Qt.locale(), 'h'));
         var currentPlaylist1, currentPlaylist2;
 
-        // Bestimme, ob Tag- oder Nachtmodus aktiv ist
+        // Define whether Day or Night is Used
         var isDayTime = time >= config.dayTimeStart && time <= config.dayTimeEnd;
 
         if (nsfwMode) {
             console.log("Loading NSFW videos");
             currentPlaylist1 = isDayTime ? Qt.resolvedUrl(config.bgVidDayNSFW) : Qt.resolvedUrl(config.bgVidNightNSFW);
-            currentPlaylist2 = currentPlaylist1; // Beide Playlists auf dasselbe setzen
+            currentPlaylist2 = currentPlaylist1;
         } else {
             console.log("Loading normal videos");
             currentPlaylist1 = isDayTime ? Qt.resolvedUrl(config.bgVidDay) : Qt.resolvedUrl(config.bgVidNight);
-            currentPlaylist2 = currentPlaylist1; // Beide Playlists auf dasselbe setzen
+            currentPlaylist2 = currentPlaylist1;
         }
 
-        // Lade die Playlists
+        // Loading the Playlists
         playlist1.load(currentPlaylist1, 'm3u');
         playlist2.load(currentPlaylist2, 'm3u');
 
-        // Mische die Playlists
+        // Randomizing the Videos
         for (var k = 0; k < Math.ceil(Math.random() * 10); k++) {
             playlist1.shuffle();
             playlist2.shuffle();
         }
 
-        // Lade das Hintergrundbild entsprechend der Tageszeit
+        // Loading BG Image depending on Time of Day [Deprecated]
         if (isDayTime && config.bgImgDay !== null) {
             var fileType = config.bgImgDay.substring(config.bgImgDay.lastIndexOf(".") + 1);
             if (fileType === "gif") {
@@ -119,6 +134,27 @@ Rectangle {
             clear_passwd_button.anchors.rightMargin = 0;
         }
         clear_passwd_button.visible = false;
+    }
+
+    // Function to update mute state based on config
+    function updateMuteState() {
+
+        // Read from config and apply to the current player
+
+        if (currentPlayer === mediaplayer1) {
+
+            mediaplayer1.muted = (config.muteVideos === "true");
+
+            mediaplayer2.muted = true; // Mute the second player
+
+        } else {
+
+            mediaplayer2.muted = (config.muteVideos === "true");
+
+            mediaplayer1.muted = true; // Mute the first player
+
+        }
+
     }
 
     // Main Container
@@ -176,7 +212,7 @@ Rectangle {
     // Set Background Video1
     MediaPlayer {
         id: mediaplayer1
-        autoPlay: true; muted: false
+        autoPlay: true; muted: muteVideos
         playlist: Playlist {
             id: playlist1
             playbackMode: Playlist.Random
@@ -223,7 +259,7 @@ Rectangle {
     // Set Background Video2
     MediaPlayer {
         id: mediaplayer2
-        autoPlay: true; muted: false
+        autoPlay: true; muted: muteVideos
         playlist: Playlist {
             id: playlist2; playbackMode: Playlist.Random
         }
@@ -407,7 +443,7 @@ Rectangle {
                 id: username_row
                 height: parent.height * 0.36
                 color: "#25000000"
-                radius: 15 // Runde Ecken
+                radius: 15
                 anchors.left: parent.left
                 anchors.leftMargin: 0
                 anchors.right: parent.right
@@ -427,7 +463,7 @@ Rectangle {
                     text: ""
                     anchors.verticalCenter: parent.verticalCenter
                 }
-
+                // Username Box Settings
                 TextBox {
                     id: username_input_box
                     height: parent.height
@@ -440,22 +476,22 @@ Rectangle {
                     font {
                         family: textFont.name
                         pixelSize: config.labelFontSize
-                        bold: true  // Fettgedruckte Schrift
+                        bold: true
                     }
-                    color: "#80000000"  // Hintergrundfarbe
-                    radius: 15 // Runde Ecken
-                    borderColor: "#80000000"  // Randfarbe
-                    textColor: "#F8F8F8"  // Textfarbe
+                    color: "#80000000"
+                    radius: 15
+                    borderColor: "#80000000"
+                    textColor: "#F8F8F8"
 
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            username_input_box.focus = true; // Setze den Fokus
+                            username_input_box.focus = true;
                         }
                     }
 
                     onActiveFocusChanged: {
-                        borderColor = activeFocus ? "#80000000" : "#80000000";  // Ändere Randfarbe
+                        borderColor = activeFocus ? "#80000000" : "#80000000";
                     }
 
                     Keys.onPressed: {
@@ -476,7 +512,7 @@ Rectangle {
                 y: username_row.height + 10
                 height: parent.height * 0.36
                 color: "#25000000"
-                radius: 15 // Runde Ecken
+                radius: 15
                 anchors.right: parent.right
                 anchors.rightMargin: 0
                 anchors.left: parent.left
@@ -493,35 +529,35 @@ Rectangle {
                     font.pixelSize: config.labelFontSize
                     color: config.labelFontColor
                 }
-
+                //Settings for the Password Box
                 PasswordBox {
                     id: password_input_box
                     height: parent.height
                     font: textFont.name
-                    color: "#80ffffff"  // Hintergrundfarbe
-                    radius: 15 // Runde Ecken
+                    color: "#80ffffff"
+                    radius: 15
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
                     anchors.rightMargin: parent.height // this sets button width, this way its a square
                     anchors.left: password_label.right
                     anchors.leftMargin: 0
-                    borderColor: "#80ffffff"  // Randfarbe
-                    textColor: "#1C1C1C"  // Textfarbe
-                    echoMode: TextInput.Password  // Passworteingabe als Punkte
+                    borderColor: "#80ffffff"
+                    textColor: "#1C1C1C"
+                    echoMode: TextInput.Password
 
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            password_input_box.focus = true; // Setze den Fokus
+                            password_input_box.focus = true;
                         }
                     }
 
                     onActiveFocusChanged: {
-                        borderColor = activeFocus ? "#80ffffff" : "#80ffffff";  // Ändere Randfarbe
+                        borderColor = activeFocus ? "#80ffffff" : "#80ffffff";
                     }
 
                     onTextChanged: {
-                        clear_passwd_button.visible = (text !== "");  // Sichtbarkeit des Clear-Buttons
+                        clear_passwd_button.visible = (text !== "");
                     }
 
                     Keys.onPressed: {
@@ -537,14 +573,14 @@ Rectangle {
 
                 Button {
                     id: clear_passwd_button
-                    radius: 15 // Runde Ecken
+                    radius: 15
                     height: parent.height
                     width: parent.height
                     color: "Transparent"
                     font {
                         family: textFont.name
                         pixelSize: config.labelFontSize
-                        bold: true  // Hier hinzufügen
+                        bold: true
                     }
                     text: "🗑️"
                     textColor: "black"
@@ -565,8 +601,8 @@ Rectangle {
 
 
                     onClicked: {
-                        password_input_box.text = '';  // Lösche Text
-                        password_input_box.focus = true;  // Setze den Fokus
+                        password_input_box.text = '';
+                        password_input_box.focus = true;
                     }
                 }
 
@@ -574,7 +610,7 @@ Rectangle {
                     id: login_button
                     height: parent.height
                     color: "#80ffffff"
-                    radius: 5 // Runde Ecken
+                    radius: 5
                     text: "🔑"
                     border.color: "Transparent"
                     anchors.verticalCenter: parent.verticalCenter
@@ -675,7 +711,6 @@ Rectangle {
                 KeyNavigation.backtab: reboot_button
                 KeyNavigation.tab: session
             }
-            // Reload-Button hinzufügen
 
             ImageButton {
 
@@ -690,7 +725,6 @@ Rectangle {
                     console.log("Reload button clicked. Current nsfwMode:", nsfwMode);
 
 
-                    // Stoppe den aktuellen Player
 
                     if (currentPlayer) {
 
@@ -699,14 +733,13 @@ Rectangle {
                     }
 
 
-                    // Toggle NSFW mode und lade die passenden Videos
+
 
                     nsfwMode = !nsfwMode;
 
                     loadPlaylists();
 
 
-                    // Starte den Timer für 5 Sekunden
 
                     reloadTimer.start();
 
@@ -715,35 +748,44 @@ Rectangle {
             }
 
 
-            // Timer für das Warten vor dem Abspielen des Videos
+
 
             Timer {
 
                 id: reloadTimer
 
-                interval: 5000 // 5 Sekunden in Millisekunden
+                interval: 5000
 
-                repeat: false // Timer soll nur einmal ausgelöst werden
+                repeat: false
 
                 onTriggered: {
 
-                    currentPlayer.play(); // Starte das Video nach 5 Sekunden
+                    currentPlayer.play();
 
                 }
 
             }
 
+            // Call updateMuteState when the configuration changes
+            Connections {
+                target: config
+                function onMuteVideosChanged() {
+                    updateMuteState(); // Update mute state when config changes
+                }
+            }
+
             Component.onCompleted: {
                 video1.focus = true;
                 loadPlaylists(); // Dieser Aufruf bleibt gleich
+                updateMuteState(); // Ensure the mute state is applied initially
             }
 
-            // Funktion, um die Playlists zu laden
+            // Loading the Playlists
             function loadPlaylists() {
                 var time = parseInt(new Date().toLocaleTimeString(Qt.locale(), 'h'));
                 var currentPlaylist1, currentPlaylist2;
 
-                // Bestimme, ob Tag- oder Nachtmodus aktiv ist
+                // Day or Night Time detection
                 var isDayTime = time >= config.dayTimeStart && time < config.dayTimeEnd; // Beachte das "<" für die Endzeit
 
                 if (nsfwMode) {
@@ -756,17 +798,17 @@ Rectangle {
                     currentPlaylist2 = currentPlaylist1; // Beide Playlists auf dasselbe setzen
                 }
 
-                // Lade die Playlists
+
                 playlist1.load(currentPlaylist1, 'm3u');
                 playlist2.load(currentPlaylist2, 'm3u');
 
-                // Mische die Playlists
+
                 for (var k = 0; k < Math.ceil(Math.random() * 10); k++) {
                     playlist1.shuffle();
                     playlist2.shuffle();
                 }
 
-                // Lade das Hintergrundbild entsprechend der Tageszeit
+
                 if (isDayTime && config.bgImgDay !== null) {
                     var fileType = config.bgImgDay.substring(config.bgImgDay.lastIndexOf(".") + 1);
                     if (fileType === "gif") {
