@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/723c36cb-b2e6-44bf-aeb0-56724c166f05
 
 - **[Dependencies](wiki/dependencies.md)**
 - **[Installing the Theme](wiki/installing-theme.md)**
-- **[Installing Your Own Videos](wiki/installing-background-videos.md)**
+- **[Using Your Own Background Videos](wiki/installing-background-videos.md)**
 - **[Testing the Theme](wiki/testing-the-theme.md)**
 - **[Customization Options](wiki/customization.md)**
 - **[Troubleshooting](wiki/troubleshooting.md)**
