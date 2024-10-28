@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/723c36cb-b2e6-44bf-aeb0-56724c166f05
 
 ### Key Features
 
-- **Dynamic Backgrounds**: Enjoy a rotating selection of videos.
+- **Dynamic Backgrounds**: Enjoy a randomized, rotating selection of your videos.
 - **Time-based Playlists**: 
   - **Daytime**: 7 AM to 7 PM
   - **Nighttime**: 7 PM to 7 AM (configurable for more granularity)
