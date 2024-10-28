@@ -17,7 +17,7 @@
    4.2 Run playlistcreator.sh *(ensure you don’t have any unwanted videos in the Video Folder beforehand)*
 
    4.3 Name the playlist files according to the naming convention:
-       **day** | **Night** | **daynsfw** | **nightnsfw**
+       **day** | **night** | **daynsfw** | **nightnsfw**
 
 #### you can edit the playlist.m3u files with any text editor you like, and add videos by pasting their path on a new line. e.g
 ```bash
