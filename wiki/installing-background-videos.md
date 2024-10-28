@@ -1,4 +1,4 @@
-### Installing Background Videos
+### Using Your Own Background Videos
 
 
 
