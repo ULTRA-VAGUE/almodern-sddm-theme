@@ -1,4 +1,5 @@
 [General]
+#Figured out that SDDM does NOT let you play any audio, but I am too lazy to remove the mute functions. :)#
 muteVideos=true
 TimeFormat=H mm
 actionBarFontColor="white"
