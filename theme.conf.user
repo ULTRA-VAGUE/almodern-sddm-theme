@@ -1,4 +1,5 @@
 [General]
+muteVideos=true
 TimeFormat=H mm
 actionBarFontColor="white"
 actionBarFontSize=10
