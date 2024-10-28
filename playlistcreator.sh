@@ -21,8 +21,8 @@ video_source_dir="/home/YOUR_USER/Videos/"
 
 
 
-playlist_target_dir="/usr/share/sddm/themes/ALmodern/playlists/"
-video_target_dir="/usr/share/sddm/themes/ALmodern/videos/"
+playlist_target_dir="/usr/share/sddm/themes/almodern-sddm-theme-main/playlists/"
+video_target_dir="/usr/share/sddm/themes/almodern-sddm-theme-main/videos/"
 
 # Check if there are videos in the source directory
 if [ -z "$(ls -A "$video_source_dir")" ]; then
@@ -31,7 +31,7 @@ if [ -z "$(ls -A "$video_source_dir")" ]; then
 fi
 
 # Create the playlist in the home directory
-read -p "Enter the name of the playlist file (without .m3u): " playlist_name
+read -p "Enter the name of the playlist file. you can choose betweeen: day | night | daynsfw | nightnsfw (without .m3u): " playlist_name
 temp_playlist="$HOME/$playlist_name.m3u"
 
 # Clear the temporary playlist to ensure it's fresh
