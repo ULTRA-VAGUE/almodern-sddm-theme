@@ -19,12 +19,13 @@
    4.3 Name the playlist files according to the naming convention:
        **day** | **night** | **daynsfw** | **nightnsfw**
 
-#### you can edit the playlist.m3u files with any text editor you like, and add videos by pasting their path on a new line. e.g
-```bash
-file:///usr/share/sddm/themes/ALmodern/example_daytime.webm
-file:///usr/share/sddm/themes/ALmodern/another_example_4_daytime.webm
-```       
-
-### :white_check_mark: Completed
-
 Once completed, the playlistcreator should move your downloaded videos into the theme folder, create playlists based on the number of videos in the Video folder, and leave you satisfied! 😊
+
+
+
+#### If you want to add your videos manually, just move  your videos into the themes own video folder.
+then edit the playlist.m3u files with any text editor you like, and add your videos by pasting their path on a new line. e.g
+```bash
+file:///usr/share/sddm/themes/almodern-sddm-theme-main/videos/example_daytime.webm
+file:///usr/share/sddm/themes/almodern-sddm-theme-main/videos/another_example_4_daytime.mp4
+```       
