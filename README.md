@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/723c36cb-b2e6-44bf-aeb0-56724c166f05
 ---
 
 ## Preview
-*the files I provide are not the ones shown, just some landscape videos (day/night) and aquatic videos (for testing if NSFW works)*
+*the files I provide are not the ones shown, just some landscape videos (day/night) and aquatic videos (for testing if NSFW works)* They may already be outdated, as they are trying to reach the apple aerials server. Please just import your own videos :)
 #### Day Theme
 ![Day Theme Screenshot 2](https://github.com/user-attachments/assets/8566ae06-c925-474b-9d0b-ab12ce4c7051)
 ![Day Theme Screenshot 1](https://github.com/user-attachments/assets/a1a6c7b2-dece-4754-82fc-e003badfd733)
