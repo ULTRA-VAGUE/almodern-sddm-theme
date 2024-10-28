@@ -1,4 +1,4 @@
-## Configuration Steps
+## Downloading the Theme
 
 **Clone the Repo**
 ```bash
