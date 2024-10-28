@@ -5,6 +5,10 @@ The theme differentiates between day and night, where night is defined as the pe
 It is possible to tweak the settings for more time differentiation.
 
 
+https://github.com/user-attachments/assets/e7b29b9f-0205-44b3-a61e-7959dd6ee5bb
+
+
+
 ## Index
 - [Dependencies](wiki/dependencies.md)
 - [Installation on various Distros](wiki/installation-on-various-distros.md)
