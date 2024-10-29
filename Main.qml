@@ -719,7 +719,7 @@ Rectangle {
 
                 height: parent.height
 
-                source: "/usr/share/sddm/themes/ALmodern/components/resources/pornhub.svg"
+                source: "/usr/share/sddm/themes/almodern-sddm-theme-main/components/resources/pornhub.svg"
 
                 onClicked: {
 
