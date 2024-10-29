@@ -695,7 +695,7 @@ Rectangle {
             ImageButton {
                 id: reboot_button
                 height: parent.height
-                source: "/usr/share/sddm/themes/ALmodern/components/resources/reboot.svg"
+                source: "/usr/share/sddm/themes/almodern-sddm-theme-main/components/resources/reboot.svg"
 
                 visible: true
                 onClicked: sddm.reboot()
@@ -706,7 +706,7 @@ Rectangle {
             ImageButton {
                 id: shutdown_button
                 height: parent.height
-                source: "/usr/share/sddm/themes/ALmodern/components/resources/shutdown.svg"
+                source: "/usr/share/sddm/themes/almodern-sddm-theme-main/components/resources/shutdown.svg"
                 visible: true
                 onClicked: sddm.powerOff()
                 KeyNavigation.backtab: reboot_button
